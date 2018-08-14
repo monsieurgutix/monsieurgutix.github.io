@@ -6,7 +6,7 @@
  });
 
  const messaging = firebase.messaging();
- const applicationKey = '6666:8btXtoBwJ6zC0IzMSCChorWLGYlMMTSN';
+ const applicationKey = '8287:0xCYGJgoz4KusZ0wS6UkdUdpYBYTVgyZ';
 
 messaging.setBackgroundMessageHandler(function(payload) 
 {
@@ -69,7 +69,6 @@ function showNotification(payload)
 
     if(payload.data.OFSYSReceptionID)
     {
-        var date = new Date();
         var data = {
             "ApplicationId": applicationKey,
             "PushId": payload.data.OFSYSReceptionID
